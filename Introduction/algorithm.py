@@ -2,6 +2,10 @@
 # An algorithm is a method for solving some computational problem.
 # An algorithm implemented in some programming language can be executed on a computer.
 
+# What is a data structure?
+# A data structure is a way of storing data within a program.
+# The basic data structure in Python is the list.
+
 def count_even(numbers):
     result = 0
     for i in numbers:
