@@ -8,8 +8,7 @@ def count_even(numbers):
         if i % 2 == 0:
             result += 1
     return result
-    
 
-numbers = 0
-for i in range(0,5):
-    numbers += 1
+print(count_even([1, 2, 3])) # 1
+print(count_even([2, 2, 2, 2, 2])) # 5
+print(count_even([5, 4, 1, 7, 9, 6])) # 2
