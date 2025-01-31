@@ -4,6 +4,15 @@
 
 import time
 
+def best_profit2(prices):
+    n = len(prices)
+    best = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            best = max(best, prices[j] - prices[i])
+    return best
+
+# Best way
 def best_profit(prices):
     min_price = float("inf")
     best = 0
@@ -11,14 +20,6 @@ def best_profit(prices):
     for price in prices:
         min_price = min(min_price, price)
         best = max(best, price - min_price)
-    return best
-
-def best_profit2(prices):
-    n = len(prices)
-    best = 0
-    for i in range(n):
-        for j in range(i + 1, n):
-            best = max(best, prices[j] - prices[i])
     return best
 
 numbers = [2, 4, 5, 4, 2, 4, 8, 7, 5]
