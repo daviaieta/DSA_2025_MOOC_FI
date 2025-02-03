@@ -12,4 +12,10 @@ print(8 in numbers)
 # remove
 numbers.remove(4)
 
-print(numbers[3])
+words = set()
+words.add("Football")
+words.add("Soccer")
+words.add("Volleyball")
+print(words)
+
+print("Football" in words) # True

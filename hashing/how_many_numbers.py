@@ -17,6 +17,12 @@ def count_distinct_set(numbers):
             seen.add(number)
     return len(seen)
 
+def count_distinct_simplify(numbers):
+    seen = set()
+    for n in numbers:
+        seen.add(n)
+    return len(seen)
+
 # count_distinct_list VS. count_distinct_set
 # This change has a big effect on the efficiency of the algorithm.
 large_list = [random.randint(0, 10000) for _ in range(1_000_000)]
